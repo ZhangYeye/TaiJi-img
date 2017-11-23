@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>太极图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: gray;
+        }
+        #wrap{
+
+            width: 400px;
+            height: 400px;
+            margin:100px auto;
+            position: relative;
+        }
+        #left,#right{
+            width: 200px;
+            height: 400px;
+            position: absolute;
+        }
+        #left{
+            background: #000;
+            border-radius: 200px 0 0 200px;
+        }
+        #right{
+            background: #fff;
+            border-radius:0 200px  200px 0;
+            left:200px;
+        }
+        #left_box,#right_box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        #left_box{
+            
+            left:100px;
+            top:0;
+            background: #000;
+
+        }
+        #right_box{
+            background: #fff;
+            left:-100px;
+            top:200px;
+        }
+        #right_box_1,#left_box_1{
+            position: absolute;
+            border-radius: 50%;
+            z-index: 2;
+            width: 50px;
+            height: 50px;
+        }
+        #right_box_1{
+            background: #000;
+            left: 75px;
+            top: 75px;
+        }
+        #left_box_1{
+            background: #fff;
+            left: 75px;
+            top: 75px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="left">
+        <div id="left_box">
+            <div id="left_box_1"></div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="right_box">
+            <div id="right_box_1"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
